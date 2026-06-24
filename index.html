@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommuNITTY App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo-area">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="#f472b6">
+                    <circle cx="12" cy="14" r="4"/>
+                    <circle cx="6.5" cy="8.5" r="2.5"/>
+                    <circle cx="10.5" cy="5.5" r="2.5"/>
+                    <circle cx="15.5" cy="5.5" r="2.5"/>
+                    <circle cx="19.5" cy="8.5" r="2.5"/>
+                </svg>
+                <span class="logo-text">CommuNITTY</span>
+            </div>
+            <button class="menu-button" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <div class="banner-wrapper">
+            <img src="https://www.shutterstock.com/image-vector/vector-illustration-cute-cartoon-dog-260nw-2650284283.jpg" alt="Happy pets illustration" class="banner-img">
+        </div>
+
+        <main class="app-content">
+            
+            <section class="section-card">
+                <h2 class="section-title">Feeding Schedule Status</h2>
+                
+                <div class="progress-container">
+                    <div class="progress-label">Today's Shifts Filled</div>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <div class="progress-percentage">25%</div>
+                    </div>
+                </div>
+
+                <div class="roster-container">
+                    <div class="roster-title">Next 7 Days Roster</div>
+                    <div class="roster-days">
+                        <div class="day-card">
+                            <span class="day-number">1</span>
+                            <span class="day-name">Mon</span>
+                        </div>
+                        <div class="day-card">
+                            <span class="day-number">2</span>
+                            <span class="day-name">Tue</span>
+                        </div>
+                        <div class="day-card">
+                            <span class="day-number">3</span>
+                            <span class="day-name">Wed</span>
+                        </div>
+                        <div class="day-card">
+                            <span class="day-number">4</span>
+                            <span class="day-name">Thu</span>
+                        </div>
+                        <div class="day-card">
+                            <span class="day-number">5</span>
+                            <span class="day-name">Fri</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <h2 class="section-title">Stray Registry and TNR</h2>
+                
+                <div class="carousel-container">
+                    <button class="carousel-btn" aria-label="Previous profile">
+                        <svg class="carousel-arrow" viewBox="0 0 10 18">
+                            <path d="M9 1L1 9L9 17" stroke="#3b0764" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                    </button>
+
+                    <div class="cards-track">
+                        <div class="stray-card">
+                            <div class="image-container">
+                                <img src="https://i.pinimg.com/736x/fd/42/8c/fd428ca384cf4d5ab93fb49682500ca4.jpg" alt="Ellie Cat" class="stray-thumb">
+                                <span class="badge">Healthy</span>
+                            </div>
+                            <div class="stray-info">
+                                <div class="stray-name">Ellie</div>
+                                <div class="stray-type">Cat</div>
+                                <div class="rating-stars">
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stray-card">
+                            <div class="image-container">
+                                <img src="https://i.pinimg.com/736x/e2/84/de/e284deb0d30376baa46ea51d5da7003f.jpg" alt="Alita Cat" class="stray-thumb">
+                                <span class="badge">Healthy</span>
+                            </div>
+                            <div class="stray-info">
+                                <div class="stray-name">Alita</div>
+                                <div class="stray-type">Cat</div>
+                                <div class="rating-stars">
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stray-card">
+                            <div class="image-container">
+                                <img src="https://i.pinimg.com/736x/63/e6/5c/63e65c9f222efd5f9a7656c00bd4de1a.jpg" alt="Lei Dog" class="stray-thumb">
+                            </div>
+                            <div class="stray-info">
+                                <div class="stray-name">Lei</div>
+                                <div class="stray-type">Dog</div>
+                                <div class="rating-stars">
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn" aria-label="Next profile">
+                        <svg class="carousel-arrow" viewBox="0 0 10 18">
+                            <path d="M1 1L9 9L1 17" stroke="#3b0764" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="pagination-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
+        </main>
+
+        <nav class="nav-bar">
+            <button class="nav-item" aria-label="Messages">
+                <svg class="nav-icon" viewBox="0 0 24 24">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+            </button>
+            
+            <button class="nav-item" aria-label="Search">
+                <svg class="nav-icon" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+            </button>
+            
+            <button class="nav-item active" aria-label="Home">
+                <svg class="nav-icon" viewBox="0 0 24 24" style="stroke: #ffffff;">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+            </button>
+            
+            <button class="nav-item" aria-label="Reminders">
+                <svg class="nav-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                </svg>
+            </button>
+            
+            <button class="nav-item" aria-label="Profile">
+                <svg class="nav-icon" viewBox="0 0 24 24">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                </svg>
+            </button>
+        </nav>
+    </div>
+
+</body>
+</html>

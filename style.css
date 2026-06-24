@@ -1,0 +1,426 @@
+/* --- Base & Reset Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: #f3e8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #581c87;
+}
+
+/* --- Device Container --- */
+.app-container {
+    width: 375px;
+    height: 812px;
+    background-color: #e9d5ff;
+    border-radius: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    border: 8px solid #3b0764;
+}
+
+/* --- Header Section --- */
+.app-header {
+    background-color: #ffffff;
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.logo-area:hover .logo-icon {
+    transform: scale(1.1) rotate(-10deg);
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #7c3aed;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.menu-button span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #7c3aed;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-button:hover span:nth-child(1) { transform: translateX(-3px); }
+.menu-button:hover span:nth-child(3) { transform: translateX(3px); }
+
+/* Banner Illustration Wrapper */
+.banner-wrapper {
+    background-color: #ffffff;
+    width: 100%;
+    height: 85px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.banner-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* --- Main Content --- */
+.app-content {
+    flex: 1;
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    scrollbar-width: none; /* Hide scrollbar for clean app look */
+}
+.app-content::-webkit-scrollbar { display: none; }
+
+/* Section Cards General */
+.section-card {
+    background-color: #c084fc;
+    border-radius: 24px;
+    padding: 16px;
+    box-shadow: 0 8px 16px rgba(124, 58, 237, 0.15);
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 14px;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+}
+
+/* --- Feeding Schedule Status --- */
+.progress-container {
+    margin-bottom: 16px;
+}
+
+.progress-label {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #581c87;
+    margin-bottom: 6px;
+}
+
+.progress-bar-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 18px;
+    background-color: #e9d5ff;
+    border-radius: 9px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    width: 25%;
+    height: 100%;
+    background-color: #7c3aed;
+    border-radius: 9px;
+    animation: pulse-glow 2s infinite ease-in-out;
+}
+
+.progress-percentage {
+    font-size: 12px;
+    font-weight: 800;
+    color: #581c87;
+    width: 28px;
+}
+
+/* Roster Grid */
+.roster-title {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #581c87;
+    margin-bottom: 8px;
+}
+
+.roster-days {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.day-card {
+    flex: 1;
+    background-color: #e9d5ff;
+    border-radius: 12px;
+    padding: 8px 4px;
+    text-align: center;
+    box-shadow: inset 0 -2px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.day-card:hover {
+    transform: translateY(-3px);
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.day-number {
+    font-size: 12px;
+    font-weight: 800;
+    display: block;
+    color: #581c87;
+}
+
+.day-name {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #7c3aed;
+}
+
+/* --- Stray Registry and TNR --- */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.carousel-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.carousel-btn:active { transform: scale(0.8); }
+
+.carousel-arrow {
+    width: 10px;
+    height: 18px;
+    fill: #581c87;
+}
+
+.cards-track {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    padding: 4px 0;
+}
+
+.stray-card {
+    background-color: #e9d5ff;
+    border-radius: 16px;
+    width: 92px;
+    padding: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.stray-card:hover {
+    transform: scale(1.05);
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-container {
+    width: 100%;
+    height: 76px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background-color: #d8b4fe;
+}
+
+.stray-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    background-color: #22c55e;
+    color: white;
+    font-size: 6px;
+    font-weight: 900;
+    padding: 2px 4px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.stray-info {
+    margin-top: 6px;
+    padding: 0 2px;
+}
+
+.stray-name {
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #581c87;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.stray-type {
+    font-size: 8px;
+    font-weight: 600;
+    color: #7c3aed;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.rating-stars {
+    display: flex;
+    gap: 1px;
+}
+
+.star-icon {
+    width: 8px;
+    height: 8px;
+    fill: #3b0764;
+}
+
+/* Carousel Pagination Dots */
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #a78bfa;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+    background-color: #581c87;
+    transform: scale(1.2);
+}
+
+/* --- Bottom Navigation Bar --- */
+.nav-bar {
+    background-color: #d8b4fe;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid rgba(124, 58, 237, 0.1);
+    padding: 0 10px;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #3b0764;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.2s ease, stroke 0.2s ease;
+}
+
+/* Nav Animations & States */
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.nav-item:hover .nav-icon {
+    transform: translateY(-2px);
+    stroke: #7c3aed;
+}
+
+.nav-item.active {
+    background-color: #c084fc;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-item.active .nav-icon {
+    stroke: #ffffff;
+    transform: scale(1.05);
+}
+
+.nav-item:active .nav-icon {
+    transform: scale(0.9);
+}
+
+/* --- Extra Animations --- */
+@keyframes pulse-glow {
+    0% { opacity: 0.95; }
+    50% { opacity: 1; filter: brightness(1.1); }
+    100% { opacity: 0.95; }
+}
